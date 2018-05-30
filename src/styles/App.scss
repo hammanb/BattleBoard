@@ -1,0 +1,207 @@
+$width: 820px;
+$height: 700px;
+@mixin vertical {
+    @media (max-width: #{$width}) {
+        @content;
+    }
+ }
+ @mixin horizontal {
+     @media (max-height: #{$height}) {
+        @content;
+     }
+ }
+html, body, #root, .battleapp {
+    height: 100% !important;
+    overflow:auto;
+}
+.hidden-toggle {
+    display: block;
+}
+.hidden-toggle-hidden {
+    display: none;
+}
+#header {
+    background-color:#777777;
+    color: #fff;
+    height:48px;
+    padding-left:35px;
+}
+#footer {
+    width: 100%;
+    margin-bottom: 5px;
+    height:40px;
+    h5 {
+        text-align: center;
+        font-size: 0.8em;
+    }
+}
+#body-div {
+    height:calc(100% - 60px);
+}
+.InitiativeDiv {
+    max-width: 70px!important;
+    -ms-flex: 0 0 50px;
+    flex: 0 0 50px;
+    font-size: 3em;
+    @include vertical {
+        max-width: 35px !important;
+        padding: 5px!important;
+        margin: 0px!important;
+    }
+    .InitiativeButtonDiv {
+        cursor:pointer;
+        color: #777;
+        &:hover {
+            color:#000;
+        }
+    }
+}
+.CharacterDiv {
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+    float: left;
+    border: 1px solid #000;
+    min-width: 160px;
+    height: 148px;
+    text-align: center;
+    @include vertical {
+        min-width:110px;
+    }
+    .row {
+        margin:0px -5px 0px -5px;
+    }
+    .MiddleDiv {
+        position:relative;
+        height:126px;
+        .Name {
+            height:75px;
+            overflow:hidden;
+            padding:15px 5px 5px 5px;
+            font-size:1.1em;
+            line-height:1.0em;
+            div {
+                padding:2px;
+                &:hover {
+                    color:#000 !important;
+                }
+            }
+        }
+        .Select {
+            padding: 0px 10px 0px 10px;
+            select {
+                font-size:0.9em;
+                text-align:center;
+            }
+        }
+    }
+    .bottom-character-row {
+        border:1px solid #a0a0a0;
+        border-width:1px 0px 0px 0px;
+        background-color:#fff;
+
+        .arrow {
+            font-family: FontAwesome;
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            cursor:pointer;
+            color:#a0a0a0;
+            &:hover {
+                color:#7b7b7b;
+            }
+            span {
+                &::before{
+                    font-size:1.1em;
+                    position:relative;
+                    top:-2px;
+                }
+            }
+        }
+        .remove {
+            line-height:0em;
+            padding:0px;
+
+            h5 {
+                cursor: pointer;
+                font-size:0.75em;
+                color: #a0a0a0;
+                width:75px;
+                padding-top:3px;
+                &:hover {
+                    color:red;
+                }
+            }
+        }
+    }
+}
+.NewCharacter {
+    cursor: pointer;
+    float: left;
+    height: 148px;
+    width: 110px!important;
+    min-width: 110px!important;
+    text-align: center;
+    border: 1px solid #888;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    padding-top: 40px;
+    color: #888;
+    &:hover {
+        color:#000;
+    }
+}
+#canvas-wrapper {
+    height: calc(100% - 40px - 158px);
+}
+.canvas-div {
+    background-color:purple;
+    min-width: 800px;
+    min-height: 500px;
+    @include horizontal {
+        min-height:300px!important;
+    }
+    @include vertical {
+        width:calc(100% - 10px);
+        min-width:310px!important;
+        margin:5px 5px 15px 5px;
+    }
+    margin: 15px 20px 20px 30px;
+    min-height: 400px;
+    background: #fff;
+    position: relative;
+    border: 1px solid #bbb;
+    padding: 10px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    &:before {
+        border: 1px solid #ddd;
+        content: "";
+        position: absolute;
+        height: 97%;
+        width: 99%;
+        background-color: #eee;
+        right: 25px;
+        top: 15px;
+        transform: rotate(-1deg);
+        z-index: -1;
+        -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+    }  
+    &:after {
+        border: 1px solid #ddd;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 99%;
+        background-color: #eee; 
+        top: 5px;
+        left: 5px;
+        transform: rotate(1deg);
+        z-index: -2;
+    }
+}

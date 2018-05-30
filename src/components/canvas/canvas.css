@@ -1,0 +1,22 @@
+.canvas {
+  background: #fff;
+  padding: 30px;
+  position: relative;
+}
+
+.canvas,
+.canvas::before,
+.canvas::after {
+  /* Styles to distinguish sheets from one another */
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  border: 1px solid #bbb;
+}
+
+.canvas::before,
+.canvas::after {
+  content: "";
+  position: absolute;
+  height: 95%;
+  width: 99%;
+  background-color: #eee;
+}
