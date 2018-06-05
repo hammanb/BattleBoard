@@ -16,10 +16,11 @@ export class Canvas extends Component {
     render () {
         return (
             <div className={'col canvas-div'}>
-                
+                <Toolbar />
                 {this.state.characters.map((char, i) =>
                         <CanvasCharacterCard  
                             name={char.name}
+                            index={char.index}
                             id={'ccc-' + char.id}
                             type={char.type}
                             selected={char.selected}

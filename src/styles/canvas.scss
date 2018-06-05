@@ -1,0 +1,111 @@
+#canvas-wrapper {
+    height: calc(100% - 40px - 158px);
+}
+.canvas-div {
+    background-color:purple;
+    min-width: 800px;
+    min-height: 500px;
+    @include horizontal {
+        min-height:300px!important;
+    }
+    @include vertical {
+        width:calc(100% - 10px);
+        min-width:310px!important;
+        margin:5px 5px 15px 5px;
+    }
+    margin: 15px 20px 20px 30px;
+    min-height: 400px;
+    background: #fff;
+    position: relative;
+    border: 1px solid #bbb;
+    padding: 10px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    &:before {
+        border: 1px solid #ddd;
+        content: "";
+        position: absolute;
+        height: 97%;
+        width: 99%;
+        background-color: #eee;
+        right: 25px;
+        top: 15px;
+        transform: rotate(-1deg);
+        z-index: -1;
+        -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+    }  
+    &:after {
+        border: 1px solid #ddd;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 99%;
+        background-color: #eee; 
+        top: 5px;
+        left: 5px;
+        transform: rotate(1deg);
+        z-index: -2;
+    }
+}
+
+#custom-dropdown-toolbar {
+    z-index: 1000;
+    position:relative;
+    .btn-primary {
+        &:focus {
+            -webkit-box-shadow:none;
+            box-shadow: none;
+        }
+    }
+    .custom-dropdown-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        padding:10px;
+        margin:5px 0 0 0;
+        float: left;
+        min-width: 10rem;
+        font-size: 1rem;
+        color: #212529;
+        text-align: left;
+        list-style: none;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: .25rem;
+    }
+}
+.character-div {
+    text-align:center;
+    margin: 0px;
+    float: none;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    h5 {
+        cursor: default;
+        margin-bottom:0px;
+    }
+    .icon {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        cursor: -webkit-grab;
+        cursor: allscroll;
+        border-radius:1000px;
+    }
+    .resizable {
+        width:60px;
+        height:60px;
+        min-width:60px;
+        min-height:60px;
+        margin:auto;
+        padding:5px;
+        resize: horizontal;
+        overflow: auto;
+    }
+}

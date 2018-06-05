@@ -48,7 +48,7 @@ export class BodyWrapper extends Component {
         //when a new character is created in the timeline.
         const arr = this.state.characters;
         this.setState((prevState, props) => {
-            let key = Date.now() + Math.random();
+            let key = Date.now().toString();
             let i = this.state.characters.length;
             let newCharacter = { name: 'Enter Name', type: 'none', id: key, index: i, selected: false};
             return arr.push(newCharacter);

@@ -1,0 +1,12 @@
+$width: 820px;
+$height: 700px;
+@mixin vertical {
+    @media (max-width: #{$width}) {
+        @content;
+    }
+ }
+ @mixin horizontal {
+     @media (max-height: #{$height}) {
+        @content;
+     }
+ }

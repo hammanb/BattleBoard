@@ -1,0 +1,28 @@
+html, body, #root, .battleboard {
+    height: 100% !important;
+    overflow:auto;
+}
+.hidden-toggle {
+    display: block;
+}
+.hidden-toggle-hidden {
+    display: none;
+}
+#header {
+    background-color:#777777;
+    color: #fff;
+    height:48px;
+    padding-left:35px;
+}
+#footer {
+    width: 100%;
+    margin-bottom: 5px;
+    height:40px;
+    h5 {
+        text-align: center;
+        font-size: 0.8em;
+    }
+}
+#body-div {
+    height:calc(100% - 60px);
+}
