@@ -27,7 +27,7 @@ Quickly set up and play out your RPG battles quickly using the timeline and canv
         - [ ] Button
 
 ##### Timeline:
-- [ ] Create new character offsets slightly on canvas instead of stacking.
+- [x] Create new character offsets slightly on canvas instead of stacking.
 - [ ] Remove item
 - [ ] Dead but dont remove feature
 - [x] Advance the initiative track
@@ -37,7 +37,7 @@ Quickly set up and play out your RPG battles quickly using the timeline and canv
 
 ###### Canvas: 
 - [ ] add the ability to create as large a canvas as needed. Perhaps add a "canvas template" with props to move as well.
-- [ ] make props scaleable.
+- [x] make props scaleable.
 - [ ] let users change color of props
 
 9:12:33am
