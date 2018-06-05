@@ -1,8 +1,8 @@
-# [RPG BattleBoard](https://hammanb.github.io/battleboard.github.io/)
+# [RPG BattleBoard](http://battleboard.brendan.to/)
 
 Quickly set up and play out your RPG battles quickly using the timeline and canvas. No more messy whiteboard and sticky notes! 
 
-[Go here to try it out.](https://hammanb.github.io/battleboard.github.io/)
+[Go here to try it out.](http://battleboard.brendan.to/)
 
 ### **Issues:** 
 - [ ] Touch phone: touch twice to enter name - something to do with the "clear data" function. Possible fix: add extra focus function to handle touch
@@ -36,6 +36,8 @@ Quickly set up and play out your RPG battles quickly using the timeline and canv
 - [ ] Minimize the timeline character cards
 
 ###### Canvas: 
-- [ ] add the ability to create as large a canvas as needed. Perhaps add a "canvas template" with elements to move as well. 
+- [ ] add the ability to create as large a canvas as needed. Perhaps add a "canvas template" with props to move as well.
+- [ ] make props scaleable.
+- [ ] let users change color of props
 
 9:12:33am
