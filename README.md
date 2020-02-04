@@ -1,8 +1,6 @@
-# [RPG BattleBoard](http://battleboard.brendan.to/)
+# [RPG BattleBoard]
 
 Quickly set up and play out your RPG battles quickly using the timeline and canvas. No more messy whiteboard and sticky notes! 
-
-[Go here to try it out.](http://battleboard.brendan.to/)
 
 ### **Issues:** 
 - [ ] Touch phone: touch twice to enter name - something to do with the "clear data" function. Possible fix: add extra focus function to handle touch
